@@ -7,7 +7,7 @@ const pokemon = {
     type: document.getElementById('pokemon-type'),
     type1: document.getElementById('pokemon-type1')*/
     types: document.getElementById('pokemon-types'),
-    abilities: document.getElementById('pokemon-abilities')
+    abilities: document.getElementById('pokemon-abilities'),
 }
 
 
@@ -86,3 +86,168 @@ const GetAbilityInfo= async (url, abilityName)=>{
 }
 
 GetPokemon();
+
+const pokemones = {
+    sprite1: document.getElementById('pokemones-image1'),
+    sprite2: document.getElementById('pokemones-image2'),
+    sprite3: document.getElementById('pokemones-image3'),
+    sprite4: document.getElementById('pokemones-image4'),
+    sprite5: document.getElementById('pokemones-image5'),
+    sprite6: document.getElementById('pokemones-image6'),
+    sprite7: document.getElementById('pokemones-image7'),
+    sprite8: document.getElementById('pokemones-image8'),
+    sprite9: document.getElementById('pokemones-image9'),
+    sprite10: document.getElementById('pokemones-image10')
+}
+ 
+//mew
+const GetPokemones = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/151/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite1.src = await sprites.front_default;
+    /*pokemones.sprite2.src = await sprites.front_default;
+    https://pokeapi.co/api/v2/pokemon?offset=140&limit=10
+    pokemones.sprite3.src = await sprites.front_default;
+    pokemones.sprite4.src = await sprites.front_default;
+    pokemones.sprite5.src = await sprites.front_default;
+    pokemones.sprite6.src = await sprites.front_default;
+    pokemones.sprite7.src = await sprites.front_default;
+    pokemones.sprite8.src = await sprites.front_default;
+    pokemones.sprite9.src = await sprites.front_default;
+    pokemones.sprite10.src = await sprites.front_default;*/
+
+}
+GetPokemones();
+
+const GetChikorita = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/152/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite2.src = await sprites.front_default;
+}
+GetChikorita();
+
+const GetBayleef = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/153/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite3.src = await sprites.front_default;
+}
+GetBayleef();
+
+const GetMeganium = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/154/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite4.src = await sprites.front_default;
+}
+GetMeganium();
+
+const GetCyndaquil = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/155/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite5.src = await sprites.front_default;
+}
+GetCyndaquil();
+
+const GetQuilava = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/156/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite6.src = await sprites.front_default;
+}
+GetQuilava();
+
+const GetTyphlosion = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/157/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite7.src = await sprites.front_default;
+}
+GetTyphlosion();
+
+const GetTotodile = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/158/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite8.src = await sprites.front_default;
+}
+GetTotodile();
+
+const GetCroconaw = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/159/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite9.src = await sprites.front_default;
+}
+GetCroconaw();
+
+const GetFeraligatr = async ()=>{
+    const url = 'https://pokeapi.co/api/v2/pokemon/160/';
+
+    const data = await fetch(url);
+    const dataJson = await data.json();
+    
+    const{sprites} = dataJson;
+
+    console.log(await dataJson);
+
+    pokemones.sprite10.src = await sprites.front_default;
+}
+GetFeraligatr();
