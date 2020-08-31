@@ -2,7 +2,9 @@ const pokemon = {
     sprite: document.getElementById('pokemon-image'),
     name: document.getElementById('pokemon-name'),
     types: document.getElementById('pokemon-types'),
-    abilities: document.getElementById('pokemon-abilities')
+    abilities: document.getElementById('pokemon-abilities'),
+    title: document.getElementById('pokemon-title'),
+    image: document.getElementById('meme-image')
 }
 
 const baseUrl = 'https://pokeapi.co/api/v2';
@@ -67,7 +69,7 @@ const GetPokemonList = async ()=>{
 
 const GetAbilityInfo= async (url, abilityName)=>{
 
-    const data = await fetch(url);
+    /*const data = await fetch(url);
     const dataJson = await data.json();
     const{effect_entries} = dataJson;
 
@@ -90,7 +92,7 @@ const GetAbilityInfo= async (url, abilityName)=>{
         <ul>
             ${effectsList}
         </ul>
-    </li>`;
+    </li>`;*/
 
     /*const abilitiesPokemon = effect_entries.map( element =>{
         const{effect, language} = element;

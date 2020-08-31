@@ -5,3 +5,12 @@
 .pokemonImage{
     border: solid;
 }
+
+body{
+    background-color: #c8d7e3;
+    margin: 0%;
+}
+
+#image{
+    width: 30%;
+}
